@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(71, 71, 71);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            color: white;
+            
+        }
+        
+        h1 {
+            background-position: center center;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = prompt('Qual é seu nome?')
+        
+        document.write(`Olá ${nome}!, seu nome tem ${nome.length} letras. <br>`)
+        
+        document.write(`<br >Com JS podemos transformar seu nome inteiro em letras maiúsculas, o resultado fica: ${nome.toLocaleUpperCase()} <br>`)
+        
+        document.write(`<br> Podemos transformar também em letras minúsculas, o resultado fica: ${nome.toLocaleLowerCase()}`)
+    </script>
+</body>
+</html>
