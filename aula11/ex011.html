@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    <style>
+         body {
+            font: normal 25px arial;
+            background-color: rgb(197, 197, 197);
+            text-align: center;
+        }
+
+        h1 {
+            width: 90%;
+            margin: auto;
+            border-radius: 25px;
+            font-size: 22px;
+            text-align: center;
+            background-color: rgb(78, 78, 78);
+            color: white;
+            
+        }
+
+        input[type="text"]{
+            height: 44px;
+            width: 110px;
+            margin-top: 20px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        input[type="button"] {
+            font-size: 22px;
+            margin: auto;
+            margin-top: 10px;
+            text-align: center;
+            height: 44px;
+            width: 90px;
+        }
+
+        input[type="button"]:hover {
+            background-color: dimgray;
+            color: white;
+        }
+
+        div {
+            font-size: 26px;
+            background-color: black;
+            width: 90%;
+            border-radius: 20px;
+            margin: auto;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle de imigrantes</h1>
+    Qual país você nasceu? <input type="text" name="pais" id="ipais">
+    <input type="button" value="informar" onclick="clicar()">
+    <div id="origem"></div>
+
+    <script>
+        function clicar() {
+            var pais = document.getElementById('ipais')
+            var origem = document.getElementById('origem')
+            var nascimento = String(pais.value)
+            origem.innerHTML = `<p>Você nasceu no(a) ${nascimento}</p>`
+
+            if (nascimento.toLowerCase() == 'brasil') {
+                origem.innerHTML+= `<p>Você é estrangeiro!</p>`
+            } else {
+                origem.innerHTML+= `<p>Você é Brasileiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
