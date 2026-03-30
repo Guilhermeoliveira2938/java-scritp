@@ -3,31 +3,135 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body {
     background-color: rgb(107, 107, 241);
-    font: normal 30px arial;
+    font: normal 1.2rem arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     color: white;
     text-align: center;
-    padding: 50px;
+    padding: 30px 15px;
 }
 
 section {
     background-color: white;
     text-align: center;
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
     border-radius: 25px;
-    padding: 15px;
+    padding: 20px 15px;
     margin: auto;
-    box-shadow: 5px  5px 10px rgba(0, 0, 0, 0.521);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* Input number */
+#iano {
+    font-size: 1rem;
+    padding: 5px 8px;
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Botão verificar */
+input[type="button"] {
+    font-size: 1rem;
+    padding: 10px 30px;
+    background-color: rgb(107, 107, 241);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(80, 80, 210);
+}
+
+/* Resultado */
+#resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+#foto {
+    display: block;
+    margin: 10px auto 0;
+    width: 150px;
+    max-width: 100%;
 }
 
 footer {
     padding: 15px;
     text-align: center;
     font-style: italic;
+    color: white;
+    margin-top: auto;
+}
+
+/* Celular pequeno */
+@media (max-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px 10px;
+    }
+
+    #iano {
+        width: 100px;
+    }
+
+    input[type="button"] {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #foto {
+        width: 120px;
+    }
+}
+
+/* Notebook / Desktop */
+@media (min-width: 768px) {
+    body {
+        font-size: 1.3rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 30px 25px;
+    }
+
+    #foto {
+        width: 180px;
+    }
 }
