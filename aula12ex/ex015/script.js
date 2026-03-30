@@ -41,7 +41,7 @@ function verificar() {
                     img.setAttribute('src', 'imagens/adulta.png')
                 } else {
                     //idoso
-                    img.setAttribute('src', 'imagens/idosa.png')
+                    img.setAttribute('src', 'imagens/vó-editada.png')
             }
         }
         resultado.style.textAlign = 'center'
