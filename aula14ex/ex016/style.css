@@ -7,7 +7,7 @@
 
 body {
     background-color: rgb(107, 107, 241);
-    font: normal 30px arial;
+    font: normal 30px Arial;
 }
 
 header {
@@ -15,10 +15,19 @@ header {
     text-align: center;
     padding: 50px;
 }
-
 section {
     background-color: white;
     width: 500px;
+    border-radius: 25px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 5px  5px 10px rgba(0, 0, 0, 0.521);
+}
+
+.resultado {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
     border-radius: 25px;
     padding: 15px;
     margin: auto;
@@ -29,7 +38,6 @@ div {
     font-size: 25px;
     text-align: left;
     padding: 10px;
-
 }
 
 input[type="number"] {

@@ -5,15 +5,29 @@ function contar() {
     let resultado = document.getElementById('resultado')
 
     if (ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0) {
+        resultado.innerHTML = 'Impossivel contar!'
         alert('[ERRO] verifique os campos novamente!')
     } else {
-        resultado.innerHTML = 'Contando: '
+        resultado.innerHTML = 'Contando: <br> '
         let i = Number(ini.value)
         let f = Number(fim.value)
         let p = Number(pas.value)
 
-        for(let c = i; c <= f; c += p) {
-            resultado.innerHTML += `${c} \ u(1F449)`
+        if (p <= 0) {
+            alert('Passo invalido! Considerando PASSO 1')
+        }
+
+        if (i < f) {
+            for(let c = i; c <= f; c += p) {
+                resultado.innerHTML += `${c} &#X1F449;`
+            }
+            resultado.innerHTML += '&#X1F3C1'
+        } else {
+            for(let c = i; c >= f; c -= p) {
+                resultado.innerHTML += `${c} &#X1F449;`
+            }
+            resultado.innerHTML += '&#X1F3C1'
         }
     }
 }
+
