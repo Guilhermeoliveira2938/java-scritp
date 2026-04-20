@@ -1,3 +1,6 @@
+alert('teste')
+
+
 document.querySelector('button').addEventListener('click', GerarTabuada)
 
 function GerarTabuada() {
