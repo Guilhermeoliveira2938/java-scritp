@@ -2,9 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tábuada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
+    <title>Tábuada</title>
 </head>
 <body>
     <header>
@@ -12,14 +12,16 @@
     </header>
 
     <section>
-        <div>
-            <p>Número: <input type="number" name="num" id="inum">
-            <input type="button" value="Gerar tabuada" onclick="GerarTabuada()"></p>
+        <div class="input-group">
+            <label for="inum">Número</label>
+            <input type="number" name="num" id="inum" placeholder="Ex: 7">
+            <input type="button" value="Gerar tabuada" onclick="GerarTabuada()">
         </div>
 
-        <div>
+        <div class="input-group">
+            <span class="select-label">Resultado</span>
             <select name="tab" id="itab" size="10">
-                <option> Digite um número aqui</option>
+                <option>Digite um número acima</option>
             </select>
         </div>
     </section>
