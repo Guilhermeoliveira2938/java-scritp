@@ -1,3 +1,5 @@
+document.querySelector('button').addEventListener('click', GerarTabuada)
+
 function GerarTabuada() {
     let num = document.getElementById('inum')
     let tab = document.getElementById('itab')

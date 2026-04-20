@@ -67,7 +67,7 @@
             border-color: rgb(107, 107, 241);
         }
 
-        input[type="button"] {
+        button{
             font-size: 16px;
             font-family: inherit;
             font-weight: 700;
