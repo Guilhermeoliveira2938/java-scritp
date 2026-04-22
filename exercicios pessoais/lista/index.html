@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Palavras</h1>
+    </header>
+    <section>
+        <p class="instrucao">Digite palavras entre 6 á 15 letras e veja quais tem mais letras:</p>
+
+        <div class="input-group">
+            <label for="ipal1">Palavra 1</label>
+            <input type="text" name="pal1" id="ipal1">
+        </div>
+        <div class="input-group">
+            <label for="ipal2">Palavra 2</label>
+            <input type="text" name="pal2" id="ipal2">
+        </div>
+        <div class="input-group">
+            <label for="ipal3">Palavra 3</label>
+            <input type="text" name="pal3" id="ipal3">
+        </div>
+
+        <button onclick="verificar()">Verificar</button>
+
+        <div id="resultado"></div>
+    </section>
+
+    <script src="lista.js"></script>
+</body>
+</html>

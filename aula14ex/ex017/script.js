@@ -1,4 +1,4 @@
-/*function GerarTabuada() {
+function GerarTabuada() {
     let num = document.getElementById('inum')
     let tab = document.getElementById('itab')
     let valor = num.value
@@ -19,7 +19,3 @@
         }
     }
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('button').addEventListener('click', GerarTabuada)
-})*/
